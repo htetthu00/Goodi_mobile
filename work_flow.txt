@@ -1,0 +1,60 @@
+Domain Name - Goodi.com 
+Project - Phone Shop
+OOP,Router System,MVC Architecture
+
+
+#database
+
+Admin table
+-id
+-name
+-email
+-password
+-department
+-profile (null_able - yes)
+-created_at 
+-updated_at
+
+Category table
+-id
+-name 
+-created_at
+-updated_at
+
+Brand table
+-id
+-name
+-created_at
+-updated_at
+
+
+Product table
+-id
+-name
+-description
+-price
+-quantity
+-image
+-uploaded_by(admin_id)
+-category_id(category_id)
+-brand(brand_id)
+-created_at
+-updated_at
+
+Customer table
+-id
+-name
+-email
+-password
+-gender(null_able)
+-profile(null_able)
+-created_at
+-updated_at
+
+Order table
+-id
+-payment_method
+-product_id
+-customer_id
+-created_at
+-updated_at
