@@ -6,47 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+
 </head>
-<body>
-    <div class="container-fluid p-0">
+<body class="admin-login-font">
+    <section class="vh-100">
+        <div class="container-fluid h-custom mt-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <!-- <div class="col-md-9 col-lg-6 col-xl-5">
+                    <h1 class="m-color ml-5">Welcome To</h1>
+                    <h1 class="mb-5 m-color ml-5">Admin Dashboard</h1>
+                    <img src="/images/b4.png" class="w-75 h-75" alt="">
+                </div> -->
+                <div class="col-md-8 col-lg-6 col-xl-4 card card-border login-card-shadow border-radius-10 p-2">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <img src="/images/logo.png" class="w-50 h-50" alt="">
+                        </div>
+                        <h3 class="card-title p-1 mb-1 m-color semi-bold">Hello,</h3>
+                        <h3 class="card-title p-1 mb-5 m-color semi-bold">Welcome Back!</h3>
+                        <form action="/admin/login" method="POST">
+                            <div class="form-outline mb-3">
+                                <!-- <label class="form-label" for="form3Example3">Email address</label> -->
+                                <input type="email" id="form3Example3" class="form-control form-control-lg"
+                                placeholder="Email" 
+                                name="email" />
+                            </div>
+                            <div class="form-outline mb-3">
+                                <!-- <label class="form-label" for="form3Example4">Password</label> -->
+                                <input type="password" id="form3Example4" class="form-control form-control-lg"
+                                placeholder="Password" 
+                                name="password" />
+                            </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <!-- Checkbox -->
+                                <div class="form-check mb-0">
+                                <input class="form-check-input me-2 m-color" type="checkbox" value="" id="form2Example3" />
+                                <label class="form-check-label m-color" for="form2Example3">
+                                    Remember me
+                                </label>
+                                </div>
+                                <a href="#!" class="forget-hover m-color">Forgot password?</a>
+                            </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-            Dropdown
-            </a>
-            <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="text-center text-lg-start mt-4 pt-2 form-outline">
+                                <button type="submit" class="btn m-bg bt-hov white btn-lg form-control form-control-lg"
+                                >Login</button>
+                                <!-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="#!"
+                                    class="link-danger">Register</a></p> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-        </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-    </div>
-    </nav>
-
-    </div>
+        </div>
+    </section>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
 </body>
